@@ -5,12 +5,10 @@
         "64bit": {
             "url": "https://github.com/stuffmatic/fSpy/releases/download/v1.0.1/fSpy-1.0.1-win.zip",
             "extract_dir": "fspy_x64",
-            "hash": "md5:fb904ee151e1b9c4d942e96b3259cd5c"
         },
         "32bit": {
             "url": "https://github.com/stuffmatic/fSpy/releases/download/v1.0.1/fSpy-1.0.1-ia32-win.zip",
             "extract_dir": "fspy_x32",
-            "hash": "md5:7518551d8d82d39d087dd6a5fdc4f9ff"
         }
     },
     "homepage": "https://fspy.io/",
