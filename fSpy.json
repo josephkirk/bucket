@@ -37,9 +37,6 @@
                 "url": "https://github.com/stuffmatic/fSpy/releases/fSpy-$version-ia32-win.zip",
                 "extract_dir": "fspy_x32"
             }
-        },
-        "hash": {
-            "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/release$matchMajor$matchMinor$matchBuild.md5"
         }
     }
 }
