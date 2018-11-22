@@ -1,0 +1,46 @@
+{
+    "version": "2.8a",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://builder.blender.org/download/blender-2.80-1844ccd5210-win64.zip",
+            "extract_dir": "blender-2.8a-windows64",
+            "hash": "md5:fb904ee151e1b9c4d942e96b3259cd5c"
+        },
+        "32bit": {
+            "url": "https://builder.blender.org/download/blender-2.80-3b7daa5bf46-win32.zip",
+            "extract_dir": "blender-2.8a-windows32",
+            "hash": "md5:7518551d8d82d39d087dd6a5fdc4f9ff"
+        }
+    },
+    "homepage": "https://www.blender.org/",
+    "bin": [
+        "blender.exe",
+        "blenderplayer.exe"
+    ],
+    "shortcuts": [
+        [
+            "blender.exe",
+            "Blender"
+        ]
+    ],
+    "checkver": {
+        "url": "https://builder.blender.org/download/",
+        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+)(?<build>(?:[a-z]+)?))-windows64.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/blender-$version-windows64.zip",
+                "extract_dir": "blender-$version-windows64"
+            },
+            "32bit": {
+                "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/blender-$version-windows32.zip",
+                "extract_dir": "blender-$version-windows32"
+            }
+        },
+        "hash": {
+            "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/release$matchMajor$matchMinor$matchBuild.md5"
+        }
+    }
+}
