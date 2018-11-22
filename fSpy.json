@@ -4,11 +4,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/stuffmatic/fSpy/releases/download/v1.0.1/fSpy-1.0.1-win.zip",
-            "extract_dir": "fspy_x64",
+            "extract_dir": "fspy_x64"
         },
         "32bit": {
             "url": "https://github.com/stuffmatic/fSpy/releases/download/v1.0.1/fSpy-1.0.1-ia32-win.zip",
-            "extract_dir": "fspy_x32",
+            "extract_dir": "fspy_x32"
         }
     },
     "homepage": "https://fspy.io/",
