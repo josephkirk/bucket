@@ -1,0 +1,45 @@
+{
+    "version": "1.1",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/stuffmatic/fSpy/releases/download/v1.0.1/fSpy-1.0.1-win.zip",
+            "extract_dir": "fspy_x64",
+            "hash": "md5:fb904ee151e1b9c4d942e96b3259cd5c"
+        },
+        "32bit": {
+            "url": "https://github.com/stuffmatic/fSpy/releases/download/v1.0.1/fSpy-1.0.1-ia32-win.zip",
+            "extract_dir": "fspy_x32",
+            "hash": "md5:7518551d8d82d39d087dd6a5fdc4f9ff"
+        }
+    },
+    "homepage": "https://fspy.io/",
+    "bin": [
+        "fSpy.exe",
+    ],
+    "shortcuts": [
+        [
+            "fSpy.exe",
+            "fSpy"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/stuffmatic/fSpy/releases",
+        "re": "fSpy-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+).(?<subversion>[\\d]+))-win.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/stuffmatic/fSpy/releases/fSpy-$version-win.zip",
+                "extract_dir": "fspy_x64"
+            },
+            "32bit": {
+                "url": "https://github.com/stuffmatic/fSpy/releases/fSpy-$version-ia32-win.zip",
+                "extract_dir": "fspy_x32"
+            }
+        },
+        "hash": {
+            "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/release$matchMajor$matchMinor$matchBuild.md5"
+        }
+    }
+}
