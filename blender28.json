@@ -38,9 +38,6 @@
                 "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/blender-$version-windows32.zip",
                 "extract_dir": "blender-$version-windows32"
             }
-        },
-        "hash": {
-            "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/release$matchMajor$matchMinor$matchBuild.md5"
         }
     }
 }
