@@ -1,1 +1,1 @@
-# bucket
+# Extra personal bucket for scoop
