@@ -13,8 +13,8 @@
     },
     "homepage": "https://www.blender.org/",
     "bin": [
-        "blender.exe",
-        "blenderplayer.exe"
+        ["blender.exe", "blender28"],
+        ["blenderplayer.exe", "blender28player"]
     ],
     "shortcuts": [
         [
