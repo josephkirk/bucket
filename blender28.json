@@ -4,11 +4,11 @@
     "architecture": {
         "64bit": {
             "url": "https://builder.blender.org/download/blender-2.80-0f5b53ba4dc-win64.zip",
-            "extract_dir": "blender-2.8-windows64"
+            "extract_dir": "blender-2.80-windows64"
         },
         "32bit": {
             "url": "https://builder.blender.org/download/blender-2.80-0f5b53ba4dc-win32.zip",
-            "extract_dir": "blender-2.8-windows32"
+            "extract_dir": "blender-2.80-windows32"
         }
     },
     "homepage": "https://www.blender.org/",
