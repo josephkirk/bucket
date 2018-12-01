@@ -1,5 +1,5 @@
 {
-    "version": "2.8a",
+    "version": "2.8b",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
@@ -29,11 +29,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/blender-$version-windows64.zip",
+                "url": "https://builder.blender.org/download/blender-$version-$build-windows64.zip",
                 "extract_dir": "blender-$version-windows64"
             },
             "32bit": {
-                "url": "https://builder.blender.org/download/Blender$matchMajor.$matchMinor/blender-$version-windows32.zip",
+                "url": "https://builder.blender.org/download/blender-$version-$build-windows32.zip",
                 "extract_dir": "blender-$version-windows32"
             }
         }
