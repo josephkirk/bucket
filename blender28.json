@@ -24,7 +24,7 @@
     ],
     "checkver": {
         "url": "https://builder.blender.org/download/",
-        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+)(?<build>(?:[a-z]+)?))-windows64.zip"
+        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+))-(?<build>(?:[a-z]+)?)-windows64.zip"
     },
     "autoupdate": {
         "architecture": {
