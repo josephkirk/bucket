@@ -1,10 +1,14 @@
 {
     "version": "2.8b",
     "license": "GPL-3.0-or-later",
+    "checkver": {
+        "url": "https://builder.blender.org/download/",
+        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+))-(?<build>(?:[a-z]+)?)-windows64.zip"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://builder.blender.org/download/blender-2.80-0f5b53ba4dc-win64.zip",
-            "extract_dir": "blender-2.80.0-git.0f5b53ba4dc-windows64"
+            "url": "https://builder.blender.org/download/blender-$version-$build-windows64.zip",
+            "extract_dir": "blender-$version-git.$build-windows64"
         },
         "32bit": {
             "url": "https://builder.blender.org/download/blender-2.80-0f5b53ba4dc-win32.zip",
@@ -22,10 +26,7 @@
             "Blender28"
         ]
     ],
-    "checkver": {
-        "url": "https://builder.blender.org/download/",
-        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+))-(?<build>(?:[a-z]+)?)-windows64.zip"
-    },
+
     "autoupdate": {
         "architecture": {
             "64bit": {
