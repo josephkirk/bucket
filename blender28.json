@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://builder.blender.org/download//blender-2.80-1b6a394d862-win64.zip",
-            "extract_dir": "blender-2.80-git.1b6a394d862-windows64"
+            "url": "https://builder.blender.org/download/blender-2.80-6d89337257b6-win64.zip",
+            "extract_dir": "blender-2.80-git.6d89337257b6-windows64"
         },
         "32bit": {
-            "url": "https://builder.blender.org/download//blender-2.80-1b6a394d862-win32.zip",
-            "extract_dir": "blender-2.80.0-git.1b6a394d862-windows32"
+            "url": "https://builder.blender.org/download/blender-2.80-6d89337257b6-win32.zip",
+            "extract_dir": "blender-2.80.0-git.6d89337257b6-windows32"
         }
     },
     "homepage": "https://www.blender.org/",
