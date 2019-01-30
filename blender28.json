@@ -31,11 +31,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://builder.blender.org/download/blender-$version-$build-win64.zip",
+                "url": "https://builder.blender.org/download/blender-$matchMajor.$matchMinor-$build-win64.zip",
                 "extract_dir": "blender-$version.0-git.$version-windows64"
             },
             "32bit": {
-                "url": "https://builder.blender.org/download/blender-$version-$build-win32.zip",
+                "url": "https://builder.blender.org/download/blender-$matchMajor.$matchMinor-$build-win32.zip",
                 "extract_dir": "blender-$version.0-git.$version-windows32"
             }
         }
