@@ -3,7 +3,7 @@
     "license": "GPL-3.0-or-later",
     "checkver": {
         "url": "https://builder.blender.org/download/",
-        "re": "blender-(?<version>(?<major>[\\d]+)\\.(?<minor>[\\d]+))-(?<build>[\\w]+)-win64.zip"
+        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+))-(?<build>[\\w]+)-win64.zip"
     },
     "architecture": {
         "64bit": {
