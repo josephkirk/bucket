@@ -3,17 +3,16 @@
     "license": "GPL-3.0-or-later",
     "checkver": {
         "url": "https://builder.blender.org/download/",
-        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+))-(?<build>[\\w]+)-win64.zip"
+        "re": "blender-(?<version>(?<major>[\\d]+).(?<minor>[\\d]+))(?<build>[\\w+\\d+])-win64.zip"
     },
     "architecture": {
         "64bit": {
-            "url": "https://builder.blender.org/download/blender-2.80-6d89337257b6-win64.zip",
-            "hash":"182d85bd4957ddb641362b98ff0dad0b7a465be467007612f018ec4a401b1387",
-            "extract_dir": "blender-2.80.0-git.6d89337257b6-windows64"
+            "url": "https://www.blender.org/download/Blender2.80/blender-2.80rc1-windows64.zip",
+            "extract_dir": "blender-2.80rc1-windows64"
         },
         "32bit": {
-            "url": "https://builder.blender.org/download/blender-2.80-6d89337257b6-win32.zip",
-            "extract_dir": "blender-2.80.0-git.6d89337257b6-windows32"
+            "url": "https://www.blender.org/download/Blender2.80/blender-2.80rc1-windows32.zip",
+            "extract_dir": "blender-2.80rc1-windows32"
         }
     },
     "homepage": "https://www.blender.org/",
@@ -31,12 +30,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://builder.blender.org/download/blender-$matchMajor.$matchMinor-$build-win64.zip",
-                "extract_dir": "blender-$version.0-git.$version-windows64"
+                "url": "https://www.blender.org/download/Blender2.80/blender-$matchMajor.$matchMinor$build-windows64.zip",
+                "extract_dir": "extract_dir": "blender-$version-windows64"
             },
             "32bit": {
-                "url": "https://builder.blender.org/download/blender-$matchMajor.$matchMinor-$build-win32.zip",
-                "extract_dir": "blender-$version.0-git.$version-windows32"
+                "url": "https://www.blender.org/download/Blender2.80/blender-$matchMajor.$matchMinor$build-windows32.zip",
+                "extract_dir": "blender-$version-windows32"
             }
         }
     }
