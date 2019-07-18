@@ -31,7 +31,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://www.blender.org/download/Blender2.80/blender-$matchMajor.$matchMinor$build-windows64.zip",
-                "extract_dir": "extract_dir": "blender-$version-windows64"
+                "extract_dir": "blender-$version-windows64"
             },
             "32bit": {
                 "url": "https://www.blender.org/download/Blender2.80/blender-$matchMajor.$matchMinor$build-windows32.zip",
